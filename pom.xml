@@ -89,8 +89,8 @@
           <goal>copy-dependencies</goal>
         </goals>
         <configuration>
-          <!--outputDirectory>${project.build.directory}/alternateLocation</outputDirectory-->
-          <outputDirectory>${project.build.directory}/</outputDirectory>          
+          <outputDirectory>${project.build.directory}/alternateLocation</outputDirectory>
+          <!--outputDirectory>${project.build.directory}/</outputDirectory-->          
 
           <overWriteReleases>false</overWriteReleases>
           <overWriteSnapshots>false</overWriteSnapshots>
