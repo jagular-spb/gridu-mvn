@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-    <prjver>1.307</prjver>
+    <prjver>1.307.1</prjver>
     <junitver>4.11</junitver>
     <log4jver>1.2.17</log4jver>
     <bAssembly>true</bAssembly>    
