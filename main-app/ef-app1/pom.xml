@@ -17,7 +17,32 @@
   </parent>
   
   
-  
+<dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junitver}</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log4jver}</version>
+      <scope>compile</scope>      
+    </dependency>    
+
+
+    <dependency>
+      <groupId>com.gridu.app</groupId>
+      <artifactId>ef-app2</artifactId>
+      <version>${prjver}</version>
+      <scope>compile</scope>      
+    </dependency>    
+
+</dependencies> 
+
+ 
   <!-- FIXME change it to the project's website -->
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
@@ -55,6 +80,31 @@
           <locales>en,fr</locales>
         </configuration>
       </plugin>
+
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.5.4</version>
+        <executions>
+          <execution>
+            <id>dist</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+            <descriptors>
+             <descriptor>src/assembly/distribution.xml</descriptor>
+            </descriptors>            
+              <!--descriptorRefs>
+                 <descriptorRef>
+                    src
+                 </descriptorRef>
+              </descriptorRefs-->
+            </configuration>
+          </execution>
+        </executions>
+    </plugin>    
     </plugins>
   </build>
 
