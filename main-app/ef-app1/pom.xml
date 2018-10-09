@@ -6,9 +6,18 @@
 
   <groupId>com.gridu.app</groupId>
   <artifactId>ef-app1</artifactId>
-  <version>1.0-SNAPSHOT</version>
-
-  <name>Maven</name>
+  <version>${prjver}</version>
+  <name>ef-app1</name>
+  
+  
+  <parent>
+    <groupId>com.gridu.app</groupId>
+    <artifactId>main-app</artifactId>
+    <version>${prjver}</version>
+  </parent>
+  
+  
+  
   <!-- FIXME change it to the project's website -->
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
@@ -20,9 +29,6 @@
     </site>
   </distributionManagement>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

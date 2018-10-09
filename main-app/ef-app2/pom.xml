@@ -3,14 +3,17 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>ef-app2</artifactId>
-
   <groupId>com.gridu.app</groupId>
-
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>${prjver}</version>
   <name>ef-app2</name>
   <url>http://maven.apache.org</url>
 
+  <parent>
+    <groupId>com.gridu.app</groupId>
+    <artifactId>main-app</artifactId>
+    <version>${prjver}</version>
+  </parent>
 
 
 
@@ -18,14 +21,14 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>${junitver}</version>
       <scope>test</scope>
     </dependency>
     
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
-      <version>1.2.17</version>
+      <version>${log4jver}</version>
       <scope>compile</scope>      
     </dependency>    
 
