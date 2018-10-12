@@ -137,7 +137,7 @@
     <repository>
       <id>git.7579433</id>
       <name>Nexus</name>
-      <url>http://git.7579433.ru:8080/repository/maven-snapshots/</url>
+      <url>http://172.17.0.1:8081/repository/maven-snapshots/</url>
     </repository>
   </distributionManagement>
 
